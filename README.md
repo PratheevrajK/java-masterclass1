@@ -91,6 +91,11 @@ Enclose statements inside curly braces `{}`:
   - `float myFloatValue = 5.25;` → Error: possible lossy conversion from double to float
   - `float myFloatValue = (float) 5.25;` or `5.25f;` — works
 
+#### Default values:
+- boolean - false
+- float, double - 0.0
+- byte, short, int, long, char - 0
+
 #### Character
 - `char` can hold only one character.
 - https://symbl.cc
