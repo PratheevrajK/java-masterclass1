@@ -69,7 +69,15 @@ It is also called as ..
    - It can implement completely different behavior, overriding the behavior of the parent.
    - It can simply call the parent class's method, which is somewhat redundant to do.
    - Or the method can call the parent class's method and include other code to run so it can extend the functionality for the child class, for that behavior.
- ### Polymorphism:
+### Polymorphism:
  - means "many forms" like a Parent class being extended by many child classes.
  - is achieved by Inheritance.
  - makes code simpler and encourages code extensibility.
+### Method overriding rules:
+ - Child class must have the same name and same arguments.
+ - Allows covariant return type - return type can be a subclass of the return type of parent class. Ex: Parent class returns List and Child class returns ArrayList.
+ - It can't have lower access modifier, means it can't have more restrictive access privileges.
+ - Only inherited methods can be overridden, means methods can be overridden only by child classes.
+ - Constructors, private methods and methods that are final of Parent class can't be overridden.
+ - A SubClass can use super.methodName() to call the SuperClass version of the overridden method.
+
