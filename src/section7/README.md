@@ -56,15 +56,16 @@ It is also called as ..
 ### Inheritance:
  - organize classes into a parent-child hierarchy.
  - this lets child inherit(reuse), fields and methods from its parent.
+ - `IS-A` relationship.
  - #### extends:
    - used by child class to extend parent class.
    - child class can extend one and only one class.
  - #### super():
    - It's a way to call a constructor on the super class directly from the sub-class's constructor.
-   - `super()` is a lot like this() and should be the first statement of the constructor.
+   - `super()` is a lot like `this()` and should be the first statement of the constructor.
    - because of this rule, `this()` and `super()` can never be used together.
-   - If you don't make a call to super(), then Java makes it for you using super's default constructor.
-   - If your super class doesn't have a default constructor, then you must explicitly call super() in all of your constructors, passing the right arguments to that constructor.
+   - If you don't make a call to `super()`, then Java makes it for you using super's default constructor.
+   - If your super class doesn't have a default constructor, then you must explicitly call `super()` in all of your constructors, passing the right arguments to that constructor.
  - #### overridden method in sub class can do of the three things:
    - It can implement completely different behavior, overriding the behavior of the parent.
    - It can simply call the parent class's method, which is somewhat redundant to do.

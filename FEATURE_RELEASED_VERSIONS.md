@@ -1,3 +1,5 @@
+#### Java 10:
+- Local Variable Type Inference(LTVI), the `var` datatype helps to figure out the compile-time type for us.
 #### Java 11:
 - `isBlank()` method in String class returns True if the length of string is zero or contains only whitespace characters.
 - `strip()` method in String class is like trim but this supports larger set of white-space characters.
@@ -12,4 +14,4 @@
 #### Java 16:
 - `Records` create immutable data classes by automatically generating boilerplate code like constructors, getters, equals(), hashCode(), and toString() methods.
 Preview feature in Java14 and standardized in Java16.
-- 
+- Pattern matching for the `instanceof` operator. Ex: `(unknownObject instanceof ScienceFiction syfy)`
