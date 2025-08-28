@@ -5,7 +5,7 @@
 - Array when initialized with some size, will be created with default values of that datatype. For Primitives, it will be its own default type and `null` for Objects.
 - has only one attribute, `length`.
 - `int[] firstArray = new int[5];` - All five elements will be initialized with default int value `0`.
-- `int[] secondArray = {1,2,3,4,5};`- Anonymous array.
+- `int[] secondArray = {1,2,3,4,5};`- Anonymous array initialization.
 ### java.util.Arrays:
 - helper class for array.
 - contains methods like `toString()`, `sort()`, `copy()`, `fill()`, `equals()`, `binarySearch()`,...
