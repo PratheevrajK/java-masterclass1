@@ -23,7 +23,8 @@ public class ArrayMethods1 {
 
         int[] fourthArray = getRandomArray(10);
         System.out.println(Arrays.toString(fourthArray));//[87, 72, 33, 23, 39, 66, 2, 42, 3, 57]
-        int[] copiedArray = Arrays.copyOf(fourthArray, fourthArray.length);
+        int[] copiedArray = Arrays.copyOf(fourthArray, fourthArray.length); // new copy gets created in memory. Updating this copied array won't update the original array.
+//        int[] intArray2 = intArray1;  ➜ Reference assignment (does not create a new array) makes intArray2 point to the same array object as intArray1.
         System.out.println(Arrays.toString(copiedArray));//[87, 72, 33, 23, 39, 66, 2, 42, 3, 57]
         copiedArray[5] = 100;
         System.out.println(Arrays.toString(copiedArray));//[87, 72, 33, 23, 39, 100, 2, 42, 3, 57]

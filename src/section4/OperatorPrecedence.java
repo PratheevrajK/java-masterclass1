@@ -9,6 +9,9 @@ public class OperatorPrecedence {
         boolean isRemainderZero = (remainder == 0.00);
         if(!isRemainderZero){
             System.out.println("Got some remainder!");
+        } else {
+            System.out.println("Got No remainder!");
         }
+        //Output: Got No remainder!
     }
 }

@@ -15,5 +15,11 @@ public class F_Sum3and5Challenge {
             }
         }
         System.out.println("Sum = " + sum);
+//        Found a match - 15
+//        Found a match - 30
+//        Found a match - 45
+//        Found a match - 60
+//        Found a match - 75
+//        Sum = 225
     }
 }

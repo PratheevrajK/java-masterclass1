@@ -28,13 +28,14 @@ public class B_AdvancedSwitchCase {
         return "Bad";
     }
     public static String advancedSwitch(String month) {
-        return switch (month) {
+        return switch (month) { // notice the return keyword in the start, this is called Switch expression.
             case "Jan", "Feb", "Mar" -> "1st";
             case "Apr", "May", "Jun" -> "2nd";
             case "Jul", "Aug", "Sep" -> "3rd";
             case "Oct", "Nov", "Dec" -> "4th";
-//            default -> "Bad";
+//            default -> "Bad"; //This also works.
             default -> {
+                //We can perform any operation in this code block and return it using yield. 'return' doesn't work here.
                 yield "not a valid month. So, could not determine the";
             }
         };

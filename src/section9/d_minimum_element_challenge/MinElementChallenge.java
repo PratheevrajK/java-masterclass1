@@ -22,6 +22,9 @@ public class MinElementChallenge {
         }
         return arr;
     }
+//    single pointer linear scan
+//    Time complexity: O(n)
+//    Space complexity: O(1)
     public static int findMin(int[] arr) {
         if (arr.length == 0) {
             return -1;

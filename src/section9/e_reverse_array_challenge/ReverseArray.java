@@ -9,12 +9,21 @@ public class ReverseArray {
         reverse(arr);
         System.out.println("Reversed Array: " + Arrays.toString(arr));
     }
+    //Half-length loop approach.
+//    public static void reverse(int[] arr) {
+//        int maxIndex = arr.length-1;;
+//        for (int i = 0; i < arr.length/2; i++) {
+//            int temp = arr[i];
+//            arr[i] = arr[maxIndex-i];
+//            arr[maxIndex-i] = temp;
+//        }
+//    }
+    //Two-pointer approach
     public static void reverse(int[] arr) {
-        int maxIndex = arr.length-1;;
-        for (int i = 0; i < arr.length/2; i++) {
-            int temp = arr[i];
-            arr[i] = arr[maxIndex-i];
-            arr[maxIndex-i] = temp;
+        for (int l = 0, r = arr.length-1; l < r; l++, r--) {
+            int temp = arr[l];
+            arr[l] = arr[r];
+            arr[r] = temp;
         }
     }
 }

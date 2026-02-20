@@ -121,6 +121,7 @@ Enclose statements inside curly braces `{}`:
 
 #### StringBuilder
 - Mutable.
+- Append method supersedes concatenation.
 - Concatenation is not supported.
 
 #### Incrementing by One
