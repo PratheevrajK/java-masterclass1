@@ -1,5 +1,6 @@
 package section10.a_arraylist;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -7,6 +8,8 @@ public class ArrayVsList {
     public static void main(String[] args) {
         String[] array = new String[]{"First", "Second", "Third"};
         List<String> list = Arrays.asList(array); // list variable is an array with List wrapper applied.
+//        List<String> list = new ArrayList<>(Arrays.asList(array)); This is the correct way of creating new list in memory.
+//        List<String> list = new ArrayList<>(List.of(array)); This also works.
         System.out.println("Array:" + Arrays.toString(array));
         System.out.println("List: " + list);
 

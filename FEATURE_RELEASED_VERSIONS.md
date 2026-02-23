@@ -19,3 +19,4 @@
 - `Records` create immutable data classes by automatically generating boilerplate code like constructors, getters, equals(), hashCode(), and toString() methods.
 Preview feature in Java14 and standardized in Java16.
 - Pattern matching for the `instanceof` operator. Ex: `(unknownObject instanceof ScienceFiction syfy)`
+- As of JDK16, all four types of nested classes can have static members of any type, including static methods.(Before JDK16, only static nested classes were allowed to have static methods).

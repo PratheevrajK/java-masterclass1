@@ -13,11 +13,11 @@ public class ArrayListPractice {
         System.out.println(groceries);
         groceries.set(1, "guava");
         System.out.println(groceries);
-        groceries.remove("mango");
+        groceries.remove("mango"); // Removes first occurrence of mango.
         System.out.println(groceries);
         groceries.remove(3);
         System.out.println(groceries);
-        groceries.removeAll(List.of("guava", "apple"));
+        groceries.removeAll(List.of("guava", "apple")); // Removes all occurrences of guava and apple.
         System.out.println(groceries);
         groceries.clear();
         System.out.println(groceries);

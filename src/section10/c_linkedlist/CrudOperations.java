@@ -71,13 +71,13 @@ public class CrudOperations {
         String s1 = list.get(2); // Fetches element based on the index.
         System.out.println(s1);
         String s2 = list.getFirst(); // Fetches first element in the list.
-        System.out.println(s1);
+        System.out.println(s2);
         String s3 = list.getLast(); // Fetches last element in the list.
         System.out.println(s3);
-        int s4 = list.indexOf("Europe"); // Fetches the index of first occurrence of element in the list.
-        System.out.println("Europe is at index " + s4);
-        int s5 = list.indexOf("Japan"); // Fetches the index of last occurrence of element in the list.
-        System.out.println("Japan is at index " + s5);
+        int s4 = list.indexOf("India"); // Fetches the index of first occurrence of element in the list.
+        System.out.println("India is at index " + s4);
+        int s5 = list.lastIndexOf("India"); // Fetches the index of last occurrence of element in the list.
+        System.out.println("India is at index " + s5);
 
         // Stack methods
         System.out.println("Element from peek() " + list.peek()); // Fetches first/top element

@@ -1,7 +1,5 @@
 package section10.g_enums;
 
-import java.util.Random;
-
 public class SwitchCaseWithEnum {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {

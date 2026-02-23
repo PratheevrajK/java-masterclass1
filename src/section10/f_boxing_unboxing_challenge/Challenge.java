@@ -14,6 +14,7 @@ public class Challenge {
         sbiBank.printStatement(customer1);
 
         String customer2 = "Pratheev";
+        //Customer is not added using addNewCustomer() method.
         sbiBank.addTransaction(customer2, 500.0);
         sbiBank.printStatement(customer2);
     }

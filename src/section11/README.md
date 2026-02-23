@@ -1,4 +1,4 @@
-_#### Abstraction:
+#### Abstraction:
 - The most general class, basic building block, which everything can be said to have in common.
 - You can generalize a set of characteristics and behavior into an abstract type.
 #### Abstract class:
@@ -24,15 +24,15 @@ _#### Abstraction:
 
 #### Interface:
 - An interface is similar to an abstract class, although it isn't a class at all.
-- A class that `implements` `interface`, must implement all the abstract methods on that interface.
-- A class can implement one or many interfaces.
 - `public interface FlightEnabled{ }`
 - An interface can `extends` one or more interfaces.
 - All the methods in Interface are `public`, unless specified.
+- A class can implement one or many interfaces.
+- A class that `implements` `interface`, must implement all the abstract methods on that interface.
 #### Abstract methods in Interface:
-- In interface, any method declared without a body, is really implicitly declared both `public` and `abstract`. Ex: `void move();`
-- If you omit an access modifier on a `class member`, it's implicitly `package private`.
-- If you omit an access modifier on an `interface member`, it's implicitly `public`.
+- In interface, any method declared without a body, is implicitly declared both `public` and `abstract`. Ex: `void move();`
+- If you omit an access modifier on a `Class member`, it's implicitly `package private`.
+- If you omit an access modifier on an `Interface member`, it's implicitly `public`.
 - Only a concrete method can have `private` access.
 - No method in interface can have `protected` access.
 - `fields` in interface are always `public static final`. Ex: `double MILE_TO_KM = 1.60934;`
@@ -42,7 +42,7 @@ When we use the final modifier, we prevent any further modifications to that com
 - a final method means it can't be overridden by a subclass.
 - a final field means an object's field can't be reassigned or given a different value after its initialization.
 - a final static field is a class field that can't be reassigned or given a different value after the class's initialization process.
-- a final class can't be overridden, meaning no class can use it in the extends clause.
+- a final class can't be extended, meaning no class can use it in the extends clause.
 - a final variable in a block of code, means that once it's assigned a value any remaining code in the block can't change it.
 - a final method parameter means we can't assign a different value to that parameter in the method code block.
 
@@ -51,7 +51,7 @@ When we use the final modifier, we prevent any further modifications to that com
 - A constant variable is a final variable of primitive type, or type String, that is initialized with a constant expression.
 - Constants in Java are usually named with all uppercase letters and with underscores between words.
 - A static constant means we access it via the type name.
-- Ex: We saw this with the INTEGER.MAX_VALUE, and the INTEGER.MIN_VALUE fields.
+- Ex: We saw this with the Integer.MAX_VALUE, and the Integer.MIN_VALUE fields.
 
 #### Abstracted Types - Coding to an Interface:
 - Both interfaces and abstract classes are `abstracted reference types`.

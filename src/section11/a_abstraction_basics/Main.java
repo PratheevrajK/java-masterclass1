@@ -34,8 +34,9 @@ public class Main {
         //Purrs!
         //Goldfish is swimming!
     }
-    public static void executeBehaviours(Animal animal, String speed) {
-        animal.makeNoise();
-        animal.move(speed);
+    //
+    public static void executeBehaviours(Animal animal, String speed) { // Implicit Upcasting happens here. Dog/Fish type is upcasted to Animal type.
+        animal.makeNoise();//Runtime Polymorphism (dynamic method dispatch) Even-though type is Animal, overridden Dog/Fish method gets executed.
+        animal.move(speed);//same here.
     }
 }

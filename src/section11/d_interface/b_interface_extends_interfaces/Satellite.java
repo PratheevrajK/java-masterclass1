@@ -33,19 +33,19 @@ public class Satellite implements OrbitEarth {
 }
 
 // Record can implement interfaces like Class.
- record DragonFly(String type, double weight) implements FlightEnabled {
-     @Override
-     public void takeOff() {
-         System.out.println(getClass().getSimpleName() + " has started to fly."); // getClass().getSimpleName() - Runtime class is Satellite.
-     }
+record DragonFly(String type, double weight) implements FlightEnabled {
+    @Override
+    public void takeOff() {
+        System.out.println(getClass().getSimpleName() + " has started to fly."); // getClass().getSimpleName() - Runtime class is Satellite.
+    }
 
-     @Override
-     public void fly() {
-         System.out.println(getClass().getSimpleName() + " is flying.");
-     }
+    @Override
+    public void fly() {
+        System.out.println(getClass().getSimpleName() + " is flying.");
+    }
 
-     @Override
-     public void land() {
-         System.out.println(getClass().getSimpleName() + " has landed.");
-     }
- }
+    @Override
+    public void land() {
+        System.out.println(getClass().getSimpleName() + " has landed.");
+    }
+}
