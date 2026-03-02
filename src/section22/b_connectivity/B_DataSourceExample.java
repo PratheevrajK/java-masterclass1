@@ -1,0 +1,24 @@
+package section22.b_connectivity;
+
+import com.mysql.cj.jdbc.MysqlDataSource;
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class B_DataSourceExample {
+    private static final String CONN_STRING = "jdbc:mysql://localhost:3306/music";
+    public static void main(String[] args) {
+        String db_user = "dev_user";
+        String db_pass = "Dev@12345"; // Instead hardcoding password here, JOptionPane can be used.
+        var dataSource = new MysqlDataSource();
+        dataSource.setUrl(CONN_STRING);
+        try(Connection connection = dataSource.getConnection(db_user, db_pass)) {
+            //play with connections
+            System.out.println("Success! Connection made to the music database.");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
