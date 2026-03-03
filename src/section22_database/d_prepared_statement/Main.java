@@ -1,4 +1,4 @@
-package section22.d_prepared_statement;
+package section22_database.d_prepared_statement;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 

@@ -1,4 +1,4 @@
-package section22.c_data_source;
+package section22_database.c_data_source;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 

@@ -1,4 +1,4 @@
-package section22.b_connectivity;
+package section22_database.b_connectivity;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 

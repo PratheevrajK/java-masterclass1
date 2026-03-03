@@ -1,10 +1,8 @@
-package section22.b_connectivity;
+package section22_database.b_connectivity;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
-import javax.sql.DataSource;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class B_DataSourceExample {
