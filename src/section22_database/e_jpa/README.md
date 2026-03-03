@@ -27,3 +27,17 @@
 - It synchronizes changes made to managed entities with the database. 
 - It performs identity management, ensuring unique entity identity within a transaction. 
 - It acts as a cache, reducing database roundtrips by keeping frequently accessed entities in memory, for faster retrieval.
+
+### Three options to execute a query in JPA:
+- JPA Query, using a special query language, named JPQL.
+- Criteria Builder, which is a more programmatic way to put together the selection request.
+- Native Query, relies on SQL.
+
+### JPA Query(JPQL):
+- The Java Persistence Query Language, or JPQL, is an object-oriented query language.
+- It provides a way to query data stored in relational databases, without needing to understand the details, of how the data is actually structured there.
+
+### CriteriaBuilder:
+![img_2.png](img_2.png)
+
+![img_1.png](img_1.png)

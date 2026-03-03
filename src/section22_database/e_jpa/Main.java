@@ -15,8 +15,27 @@ public class Main {
              EntityManager entityManager = sessionFactory.createEntityManager()) {
             var transaction = entityManager.getTransaction(); // we can use transaction to test and rollback our changes.
             transaction.begin();
-            Artist artist = new Artist("Muddy Water");
-            entityManager.persist(artist);
+
+            // Insert - adds the artist to managed state
+//            Artist artist = new Artist("Muddy Water");
+//            entityManager.persist(artist);
+
+            // Select an artist(managed state) and update.
+//            Artist artist = entityManager.find(Artist.class, 204);
+//            System.out.println(artist);
+//            artist.setArtistName("Muddy Watersss"); // this line would update data in the DB.
+
+            // Update an artist(makes the entity a managed one first.)
+//            entityManager.merge(new Artist(204, "Muddy Water merge"));
+
+            // Delete - Removes the entity from managed state and deletes the record.
+//            entityManager.remove(artist);
+
+            Artist artist = entityManager.find(Artist.class, 201);
+            System.out.println(artist);
+//            artist.removeDuplicates();
+            artist.addAlbum("The Best of Muddy Waters");
+            System.out.println(artist);
             transaction.commit();
         } catch (Exception e) {
             log.error("e: ", e);
