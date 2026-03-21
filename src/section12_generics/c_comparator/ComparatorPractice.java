@@ -1,4 +1,4 @@
-package section12.c_comparator;
+package section12_generics.c_comparator;
 
 import java.util.Arrays;
 import java.util.Comparator;

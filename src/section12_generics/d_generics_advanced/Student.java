@@ -1,4 +1,4 @@
-package section12.d_generics_advanced;
+package section12_generics.d_generics_advanced;
 
 import java.util.Random;
 

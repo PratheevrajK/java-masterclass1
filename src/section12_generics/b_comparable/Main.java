@@ -1,4 +1,4 @@
-package section12.b_comparable;
+package section12_generics.b_comparable;
 
 import java.util.Arrays;
 

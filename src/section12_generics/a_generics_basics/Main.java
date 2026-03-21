@@ -1,4 +1,4 @@
-package section12.a_generics_basics;
+package section12_generics.a_generics_basics;
 
 public class Main {
     public static void main(String[] args) {

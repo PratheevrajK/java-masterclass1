@@ -1,4 +1,4 @@
-package section12.e_type_erasure;
+package section12_generics.e_type_erasure;
 
 import java.util.ArrayList;
 import java.util.List;
