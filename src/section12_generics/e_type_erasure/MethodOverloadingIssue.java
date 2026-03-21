@@ -19,6 +19,8 @@ public class MethodOverloadingIssue {
 //            System.out.println(elem.floatValue());
 //        }
 //    }
+
+    // TypeParameter can also be used, but ideal solution is WildCard as its just read.
     public static void testList(List<?> list) {
         for (var elem : list) {
             if (elem instanceof String s) {
@@ -26,7 +28,6 @@ public class MethodOverloadingIssue {
             } else if (elem instanceof Integer i) {
                 System.out.println(i.floatValue());
             }
-
         }
     }
 }
