@@ -26,7 +26,8 @@ public class ConsumerChallenge {
             String[] parts = s.split(" ");
 //            for (String part : parts) {
 //                System.out.println(part);
-//            } //forEach Consumer can also be used.
+//            }
+            // forEach Consumer can also be used.
             Arrays.asList(parts).forEach(a -> System.out.println(a));
         };
         printWordsLambda.accept("Let's split this."); // openly executing the lambda, instead in a method.

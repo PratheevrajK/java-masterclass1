@@ -2,6 +2,7 @@ package section14.b_functional_interface_categories;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class A_ConsumerInterface {
     public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class A_ConsumerInterface {
 //            }
 //        }
 
+//        Consumer<String> consumer = s -> System.out.println(s);
         list.forEach(s -> System.out.println(s));
         //alpha
         //beta
@@ -39,9 +41,9 @@ public class A_ConsumerInterface {
 //        String prefix = "Hey ";
 //        list.forEach((var s) -> {
 //            char initial = s.charAt(0);
-//            System.out.printf("%s %s means %c%n", prefix, s, initial);
+//            System.out.printf("%s %s means %c%n", prefix, s, initial); // Error: Variable `prefix` used in lambda expression should be final or effectively final.
 //        });
-//        prefix = "Hello";  //Variable used in lambda expression should be final or effectively final.
+//        prefix = "Hello";
 
     }
 }
